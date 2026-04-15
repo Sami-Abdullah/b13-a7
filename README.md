@@ -33,8 +33,8 @@ KeenKeeper is a simple web app that helps you remember your friends exist… bef
 
 
 ## Usage
-Browse all your friends on the Home page
-Click on a friend to view detailed information
-Use Quick Check-In buttons to log interactions
-View all interactions in the Timeline page
-Analyze your communication habits in the Stats page
+Browse all your friends on the Home page <br>  
+Click on a friend to view detailed information <br>
+Use Quick Check-In buttons to log interactions <br>
+View all interactions in the Timeline page <br>
+Analyze your communication habits in the Stats page <br>
