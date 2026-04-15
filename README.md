@@ -32,7 +32,7 @@ KeenKeeper is a simple web app that helps you remember your friends exist… bef
 <img width="400" height="400" alt="optimized_Sami-Abdullah_langs_overview_dark" src="https://github.com/user-attachments/assets/0ca3f4d7-b48f-4f30-aa93-d8616649d2f0" />
 
 
-## Usage
+## Usage <br>
 Browse all your friends on the Home page <br>  
 Click on a friend to view detailed information <br>
 Use Quick Check-In buttons to log interactions <br>
