@@ -15,17 +15,17 @@
 
 KeenKeeper is a simple web app that helps you remember your friends exist… before they forget *you* exist. It tracks when you last contacted people, reminds you who you’ve been neglecting, and lets you quickly “fix” your social life with a call, text, or video check-in. Think of it as a guilt-powered friendship manager — turning “I should text them someday” into “okay fine, I’ll do it now.”
 
-## ✨ Features
-📋 Manage and track all your friends in one place
-⏰ Monitor days since last contact
-🔴 Status indicators (Overdue / Almost Due / On-Track)
-📞 Quick Check-In (Call, Text, Video)
-📜 Timeline of all interactions
-🔍 Filter timeline by interaction type
-📊 Friendship analytics with pie chart
-📱 Fully responsive (mobile, tablet, desktop)
-⚡ Toast notifications for interactions
-🚫 Custom 404 error page
+## ✨ Features <br>
+📋 Manage and track all your friends in one place <br>
+⏰ Monitor days since last contact <br>
+🔴 Status indicators (Overdue / Almost Due / On-Track) <br>
+📞 Quick Check-In (Call, Text, Video) <br>
+📜 Timeline of all interactions <br>
+🔍 Filter timeline by interaction type <br>
+📊 Friendship analytics with pie chart <br>
+📱 Fully responsive (mobile, tablet, desktop) <br>
+⚡ Toast notifications for interactions <br>
+🚫 Custom 404 error page <br>
 
 ##🛠️ Tech Stack
 
