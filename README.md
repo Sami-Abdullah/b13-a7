@@ -1,4 +1,1 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/your-user-name/your-repo-name/your-branch-name/your-assets-folder-name/content-name-dark.gif">
-  <img alt="Image changing depending on Dark/Light Github theme mode." src="https://raw.githubusercontent.com/your-user-name/your-repo-name/your-branch-name/your-assets-folder-name/content-name-light.gif" width="100%">
-</picture>
+<img width="1178" height="88" alt="optimized_Sami-Abdullah_typewriter_text_dark" src="https://github.com/user-attachments/assets/54f84967-fc91-4424-9467-a91fe619d87e" />
