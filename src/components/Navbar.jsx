@@ -1,25 +1,28 @@
+
 import React from 'react';
+import { Links } from './Links';
+import Image from 'next/image';
+import logo from '../../public/assets/logo.png'
+import MenuLinks from './MenuLinks';
 
 const Navbar = () => {
+
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-      <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
-      </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li><a>Link</a></li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="bg-base-100 rounded-t-none p-2">
-                <li><a>Link 1</a></li>
-                <li><a>Link 2</a></li>
-              </ul>
-            </details>
-          </li>
+    <div className="py-4 bg-base-100  max-w-11/12 mx-auto">
+      <div className='flex items-center w-full justify-between gap-2'>
+
+        <ul className=' sm:hidden md:hidden'>
+          <MenuLinks></MenuLinks>
+        </ul>
+        <div >
+          <Image src={logo} alt='logo'></Image>
+        </div>
+
+        <ul className="hidden sm:block md:block">
+          <Links></Links>
         </ul>
       </div>
+
     </div>
   );
 };
