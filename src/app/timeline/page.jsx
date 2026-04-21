@@ -1,6 +1,8 @@
+'use client'
 import React from 'react';
 
-const layout = () => {
+const page = () => {
+  
   return (
     <div>
       
@@ -8,4 +10,4 @@ const layout = () => {
   );
 };
 
-export default layout;
+export default page;

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,11 +27,17 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen flex flex-col bg-[#f8fafcFF]">
 
 
-        <div className="">
-          <Navbar></Navbar>
-          {children}
-          <Footer></Footer>
-        </div>
+
+          <div>
+            <Navbar></Navbar>
+            {children}
+            <Footer></Footer>
+
+          </div>
+
+
+
+
 
 
 

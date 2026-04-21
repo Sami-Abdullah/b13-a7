@@ -1,7 +1,7 @@
-'use client'
+
 import React from 'react';
 import Card from '@/components/Card'
-const FriendCards = ({friends}) => {
+const FriendCards = ({friends=[]}) => {
 
   console.log(friends);
   return (

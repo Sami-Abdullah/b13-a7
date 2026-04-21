@@ -1,8 +1,8 @@
+
 import ProfileDetailsCard from '@/components/ProfileDetailsCard';
+import TimeLineTracker from '@/components/TimeLineTracker';
 import React from 'react';
-import { IconContext } from 'react-icons';
 import { GoArchive } from 'react-icons/go';
-import { LuPhone, LuVideo } from 'react-icons/lu';
 import { MdOutlineDelete, MdOutlineTextsms } from 'react-icons/md';
 import { RiNotificationSnoozeLine } from 'react-icons/ri';
 
@@ -14,8 +14,7 @@ const page = async ({ params }) => {
   const profile = profiles.find(p =>
     p.id === Number(profileid)
   );
-  console.log(profiles);
-  console.log(profile);
+  console.log(profileid,typeof(profileid));
   const { days_since_contact, goal, next_due_date } = profile
 
   return (
@@ -59,24 +58,7 @@ const page = async ({ params }) => {
             </div>
           </div>
           {/* bottom */}
-          <div className='shadow-sm p-4 rounded-2xl space-y-4'>
-            <div>Quick Check-In</div>
-            <div>
-              <div className='flex gap-4'>
-                <div className='flex-1'>
-                  <button className='w-full bg-gray-200 py-10 btn flex flex-col'><span><LuPhone /> </span><span>Call</span></button>
-                </div>
-                <div className='flex-1'>
-                  <button className='w-full bg-gray-200 py-10 btn flex flex-col'><span><MdOutlineTextsms /> </span><span>Text</span></button>
-                </div>
-                <div className='flex-1'>
-                  <button className='w-full bg-gray-200 py-10 btn flex flex-col'><span><LuVideo /> </span><span>Video</span></button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        
+          <TimeLineTracker profileid={profileid}></TimeLineTracker>
         </div>
       </div>
     </div>

@@ -20,7 +20,7 @@ export function Links() {
         </IconContext.Provider>
           Home
       </Link>
-      <Link className={`${pathname === '/about' ? 'bg-[#244d3fFF] text-white' : 'text-gray-400'} flex items-center gap-1 font-semibold btn `} href="/about">
+      <Link className={`${pathname === '/about' ? 'bg-[#244d3fFF] text-white' : 'text-gray-400'} flex items-center gap-1 font-semibold btn `} href="/timeline">
         <IconContext.Provider value={{ size:"1.5em" }}>
           <div>
             <LuClock3 />

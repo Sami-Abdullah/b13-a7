@@ -4,7 +4,9 @@ import FriendCards from "@/components/FriendCards";
 
 
 
+
 export default async function Home() {
+  
   const res = await fetch('http://localhost:3000/data.json')
   const friends = await res.json()
 
