@@ -6,7 +6,7 @@ import text from '../../public/assets/text.png'
 const TimeLineList = ({ t }) => {
 
   const { name, type, date } = t
-  console.log(name, type, date);
+
   const cardMap = {
     call: <div className="p-4 bg-gray-300  rounded-2xl shadow-sm flex items-center gap-4">
 

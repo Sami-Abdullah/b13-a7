@@ -20,9 +20,6 @@ const TimeLineTrackerChild = ({ profile }) => {
     }])
 
   }
-  useEffect(() => {
-    console.log("UPDATED:", connectionType);
-  }, [connectionType]);
 
   return (
     <div className='shadow-sm p-4 rounded-2xl space-y-4'>
