@@ -1,14 +1,14 @@
 
 import Trackers from "@/components/Trackers";
 import FriendCards from "@/components/FriendCards";
-
+import data from '@/data/data.json'
 
 
 
 export default async function Home() {
   
-  const res = await fetch('http://localhost:3000/data.json')
-  const friends = await res.json()
+
+  const friends = data
 
   return (
     <div className="flex flex-col items-center font-sans text-black">

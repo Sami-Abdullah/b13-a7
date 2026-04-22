@@ -6,11 +6,11 @@ import React from 'react';
 import { GoArchive } from 'react-icons/go';
 import { MdOutlineDelete, MdOutlineTextsms } from 'react-icons/md';
 import { RiNotificationSnoozeLine } from 'react-icons/ri';
-
+import data from '@/data/data.json'
 const page = async ({ params }) => {
   const { profileid } = await params;
-  const res = await fetch('http://localhost:3000/data.json')
-  const profiles = await res.json();
+
+  const profiles = data
 
   const profile = profiles.find(p =>
     p.id === Number(profileid)
