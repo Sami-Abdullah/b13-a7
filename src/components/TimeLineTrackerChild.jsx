@@ -1,16 +1,23 @@
+'use client'
 import React, { useContext, useEffect } from 'react';
 import { LuPhone, LuVideo } from 'react-icons/lu';
 import { MdOutlineTextsms } from 'react-icons/md';
 import { connectionContext } from './ContextCom';
 
-const TimeLineTrackerChild = () => {
-  const { connectionType, setConnectionType, profileid } = useContext(connectionContext);
+const TimeLineTrackerChild = ({ profile }) => {
+  const { connectionType, setConnectionType } = useContext(connectionContext);
 
   const handleConnection = (method) => {
     const temp = [...connectionType];
-    const res = temp.filter(t => t.id !== profileid)
+    const res = temp.filter(t => t.id !== profile.id)
 
-    setConnectionType([...res, { id: profileid, type: method }])
+    setConnectionType([...res,
+    {
+      id: profile.id,
+      type: method,
+      name: profile.name,
+      date: profile.next_due_date
+    }])
 
   }
   useEffect(() => {

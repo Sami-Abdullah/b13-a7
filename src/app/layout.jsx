@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import TimeLineTracker from "@/components/TimeLineTracker";
 
 
 
@@ -27,13 +28,14 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen flex flex-col bg-[#f8fafcFF]">
 
 
-
+        <TimeLineTracker>
           <div>
             <Navbar></Navbar>
             {children}
             <Footer></Footer>
-
           </div>
+        </TimeLineTracker>
+
 
 
 

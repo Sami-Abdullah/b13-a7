@@ -2,17 +2,14 @@
 import React, {  useState } from 'react';
 import TimeLineTrackerChild from './TimeLineTrackerChild';
 import { connectionContext } from './ContextCom';
-const TimeLineTracker = ({ profileid }) => {
+const TimeLineTracker = ({ children }) => {
   const [connectionType, setConnectionType] = useState([]);
 
   return (
 
     <>
-      <connectionContext.Provider value={{connectionType,setConnectionType,profileid}}>
-
-        <TimeLineTrackerChild >
-
-        </TimeLineTrackerChild>
+      <connectionContext.Provider value={{connectionType,setConnectionType}}>
+        {children}
       </connectionContext.Provider>
     </>
   );

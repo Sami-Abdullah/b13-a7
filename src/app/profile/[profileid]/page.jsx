@@ -1,6 +1,7 @@
 
 import ProfileDetailsCard from '@/components/ProfileDetailsCard';
 import TimeLineTracker from '@/components/TimeLineTracker';
+import TimeLineTrackerChild from '@/components/TimeLineTrackerChild';
 import React from 'react';
 import { GoArchive } from 'react-icons/go';
 import { MdOutlineDelete, MdOutlineTextsms } from 'react-icons/md';
@@ -58,7 +59,7 @@ const page = async ({ params }) => {
             </div>
           </div>
           {/* bottom */}
-          <TimeLineTracker profileid={profileid}></TimeLineTracker>
+          <TimeLineTrackerChild profile={profile}></TimeLineTrackerChild>
         </div>
       </div>
     </div>
