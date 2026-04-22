@@ -3,22 +3,24 @@ import React, { useContext, useEffect } from 'react';
 import { LuPhone, LuVideo } from 'react-icons/lu';
 import { MdOutlineTextsms } from 'react-icons/md';
 import { connectionContext } from './ContextCom';
+import { ToastContainer, toast } from 'react-toastify';
 
 const TimeLineTrackerChild = ({ profile }) => {
   const { connectionType, setConnectionType } = useContext(connectionContext);
-
+  const notify = (method) => toast(`${method} with ${profile.name}`);
   const handleConnection = (method) => {
     const temp = [...connectionType];
     const res = temp.filter(t => t.id !== profile.id)
-
+    
     setConnectionType([...res,
-    {
-      id: profile.id,
-      type: method,
-      name: profile.name,
-      date: profile.next_due_date
-    }])
-
+      {
+        id: profile.id,
+        type: method,
+        name: profile.name,
+        date: profile.next_due_date
+      }])
+      
+    notify(method)
   }
 
   return (
@@ -38,6 +40,7 @@ const TimeLineTrackerChild = ({ profile }) => {
 
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
