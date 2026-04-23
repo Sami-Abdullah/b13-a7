@@ -21,9 +21,9 @@ const page = async ({ params }) => {
   return (
     <div className='mx-auto py-20 w-7/10'>
 
-      <div className='grid grid-cols-3 gap-6 items-stretch'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch'>
 
-        <div className='col-span-1 flex flex-col justify-between gap-4'>
+        <div className='lg:col-span-1 flex flex-col justify-between gap-4'>
 
           <ProfileDetailsCard profile={profile}></ProfileDetailsCard>
 
@@ -32,9 +32,9 @@ const page = async ({ params }) => {
           <div><button className=' btn w-full text-red-400 shadow-md'> <MdOutlineDelete />Delete</button></div>
 
         </div>
-        <div className='col-span-2 flex flex-col justify-between'>
+        <div className='lg:col-span-2 flex flex-col justify-between'>
           {/* top */}
-          <div className='flex justify-between gap-6'>
+          <div className='flex flex-col lg:flex-rowjustify-between gap-6'>
             <div className='flex flex-col shadow-sm text-center flex-1 rounded-2xl py-7'>
               <span className='text-[#244d3fFF] font-semibold text-3xl'>{days_since_contact}</span>
               <span className='text-gray-400 text-[18px]'>Days Since Contact</span>
@@ -49,7 +49,7 @@ const page = async ({ params }) => {
             </div>
           </div>
           {/* middle */}
-          <div className='shadow-sm p-4 rounded-2xl space-y-4 '>
+          <div className='shadow-sm p-4 rounded-2xl space-y-4 my-5 lg:my-0'>
             <div className='flex items-center justify-between '>
               <div><p className='text-[#244d3fFF] text-xl font-medium'>Relationship Goal</p></div>
               <button className='btn text-gray-700'> Edit</button>

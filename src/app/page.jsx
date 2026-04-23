@@ -19,7 +19,7 @@ export default async function Home() {
         <button className='btn bg-[#244d3fFF] text-white '>+ Add a Friend</button>
       </div>
 
-      <Trackers></Trackers>
+      <Trackers friends={friends}></Trackers>
       <div className="divider my-8 w-7/12 mx-auto"></div>
 
       <div className="text-left w-7/12 mb-8">
